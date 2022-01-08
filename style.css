@@ -1,0 +1,122 @@
+/*Nous debutons en css*/
+#titre
+{
+    text-decoration: underline;
+    border: 2px red double;
+    border-radius: 10px 0px 10px 0px;
+}
+.fond
+{
+    background-color: burlywood;
+}
+#couleur_de_text
+{
+    background-color: cadetblue;
+}
+mark{
+    background-color: crimson;
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+.fond, #titre
+{
+    color: red;
+}
+/* une balise contenu dans une autre */
+p em
+{
+    font-weight: bold;
+}
+
+/* une balise qui suit une autre */
+h2+p
+{
+    font-size: 1.2em;
+}
+/* une balise qui possède un attribut */
+a[title]
+{
+    text-decoration: none;
+}
+/* une balise qui possède un attribut et une valeur */
+ul li{
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: rgba(150, 200, 255, 0.5) !important;
+}
+body{
+    background: #f6f6f6;
+    text-shadow: 0px 0px 1px red;
+}
+#ombre{
+    border-radius: 10px;
+    background-color: burlywood;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.493);
+    width: 400px;
+    height: 50px;
+    padding-left: 100px ;
+    margin: auto;
+}
+#overflow_block{
+    position: fixed;
+    top: 100px;
+    width: 400px;
+    height: 300px;
+    margin: 200px;
+    border: bisque solid 3px;
+    padding: 10px;
+    background-color: rgb(214, 214, 214);
+    overflow: auto;
+    text-align: justify;
+    background: url(../images/logo.png);
+    background-attachment: scroll;
+    
+}
+nav+p{
+    display: inline-block;
+    text-align: justify;
+    width:  600px;
+    margin-left: 10px;
+}
+nav{
+   display: inline-block;
+    width: 200px;
+    border: black 2px solid;
+}
+#parent1
+{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(92, 92, 92);
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#parent2
+{
+    width: 70%;
+    height: 70%;
+    background-color: darkgoldenrod;
+    margin: auto;
+    display: inline;
+    position: relatif;
+    left: 10px;
+    top: 10px;
+
+}
+#ombre:hover{
+    background-color: rgba(236, 203, 160, 0.294);
+    border: solid 2px burlywood;
+    box-shadow: none;
+}
+a[target]:active, #ombre:active {
+    background-color: cadetblue;
+
+}
+a[target]:visited{
+   color: coral;
+}
